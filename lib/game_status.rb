@@ -17,16 +17,13 @@ WIN_COMBINATIONS = [
   
 def won?(board)
     
-
-   
   winner_X_count = 0 
   winner_O_count = 0 
   
-WIN_COMBINATIONS.each do |combo| 
+  WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
   win_index_2 = combo[1]
   win_index_3 = combo[2]
-
 
   pos_1 = board[win_index_1]
   pos_2 = board[win_index_2]
@@ -39,9 +36,9 @@ WIN_COMBINATIONS.each do |combo|
     return combo
   
   else
-   false 
+    false 
   end #end if
- end #end do
+  end #end do
  
 #return false if empty board 
  board.none? do |value|
