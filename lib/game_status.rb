@@ -51,10 +51,7 @@ def full?(board)
   board.all? do |value|
     value == "X" || value == "O"
   end
-  
-  
-  
-  
+
 end
 
 def draw?(board)
@@ -74,3 +71,5 @@ def over?(board)
   end
   
 end
+
+def winner?(board)
