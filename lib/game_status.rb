@@ -49,6 +49,8 @@ def full?(board)
   board.any? do |value|
     value == ""
   end
+  
+  
 end
 
 def draw?(board)
