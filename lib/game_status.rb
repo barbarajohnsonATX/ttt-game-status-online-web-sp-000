@@ -81,7 +81,7 @@ end
 
 def winner?(board)
   result = won?(board)
-  if is_Arra
+  if is_array(result)
     return result[0]
   else 
     false
