@@ -18,5 +18,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   winning_combos = WIN_COMBINATIONS
     
-  winning_combos.any? { |combo| combo == board}
+  winning_combos.any? { |combo| combo = board}
 end
