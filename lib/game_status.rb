@@ -17,9 +17,7 @@ WIN_COMBINATIONS = [
   
 def won?(board)
 
-board.all? do |value|
-  value != "" 
-  end
+
   
 WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
@@ -41,4 +39,9 @@ WIN_COMBINATIONS.each do |combo|
  end
 end
     
+end
+
+
+def full?(board)
+  
 end
