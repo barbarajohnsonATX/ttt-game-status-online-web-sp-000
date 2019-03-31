@@ -84,6 +84,6 @@ def winner?(board)
   if result != false 
     return result[0]
   else
-    false
+    return nil 
   end 
 end 
