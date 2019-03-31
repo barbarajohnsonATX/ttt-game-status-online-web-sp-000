@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   
 def won?(board)
 
-board.all? do |value|
+if board.all?("", " ")
   if value != "X" or value != "O"
     false
   end
