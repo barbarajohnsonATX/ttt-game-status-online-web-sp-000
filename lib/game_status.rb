@@ -81,9 +81,8 @@ end
 
 def winner?(board)
   result = won?(board)
-  result.kind_of?(Array)
-  if combo == true 
-    return board[combo[0]]
+  if result.kind_of?(Array)
+    return board[result[0]]
   else 
     nil
     
