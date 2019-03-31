@@ -30,8 +30,10 @@ def won?(board)
   pos_3 = board[win_index_3]
   
     if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
+      winner_X_count += 1
       return combo
     elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+      winner_O_count += 1
       return combo
     else
       false 
@@ -42,6 +44,10 @@ def won?(board)
  board.none? do |value|
    value == " "
  end 
+ 
+ if winner_O_count == winner_X_count 
+   false 
+  end 
  
  
  
