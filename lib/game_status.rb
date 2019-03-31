@@ -83,5 +83,5 @@ def winner?(board)
   result = won?(board)
   if result != false 
     return result[0]
-    
+  end 
 end 
