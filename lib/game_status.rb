@@ -43,5 +43,10 @@ end
 
 
 def full?(board)
-  
+  board.any? do |value|
+    value = ""
+  end
+end
+    
+    
 end
