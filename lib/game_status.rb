@@ -16,11 +16,6 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-
-board.all? do |value|
-  value != " "
-end
-
   
 WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
@@ -73,5 +68,11 @@ def over?(board)
 end
 
 def winner?(board)
+  winning = won?(board)
+  if winning[0] == "X"
+    return "X"
+  else 
+    return "O"
+  end
   
 end 
