@@ -19,7 +19,8 @@ def won?(board)
 
 WIN_COMBINATIONS.any? do |combo| 
 if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
-  board
+  [comb0[0], combo[1], combo[2]]
+  
 elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
   board
 else
