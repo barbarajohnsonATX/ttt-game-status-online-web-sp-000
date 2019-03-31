@@ -22,13 +22,15 @@ def won?(board)
    value == " "
    end 
    
+  winner_X_count = 0 
+  winner_O_count = 0 
+  
 WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
   win_index_2 = combo[1]
   win_index_3 = combo[2]
 
-  winner_X_count = 0 
-  winner_O_count = 0 
+
   pos_1 = board[win_index_1]
   pos_2 = board[win_index_2]
   pos_3 = board[win_index_3]
