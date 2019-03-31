@@ -80,7 +80,7 @@ def over?(board)
 end
 
 def winner?(board)
-  winning_combo = won?(board)
+  winning_combo = won?(board).isk
   if winning_combo == 1
     if board[winning_combo[0]] == "X"
        "X"
