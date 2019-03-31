@@ -29,10 +29,10 @@ def won?(board)
   pos_2 = board[win_index_2]
   pos_3 = board[win_index_3]
   
-  if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
-    return combo
+    if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
+      return combo
     
-  elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+    elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
     return combo
   
   else
