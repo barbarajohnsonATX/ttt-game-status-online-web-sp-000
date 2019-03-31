@@ -30,7 +30,7 @@ WIN_COMBINATIONS.each do |combo|
     return combo
   
   else
-   false
+   nil
  end
  end 
  
