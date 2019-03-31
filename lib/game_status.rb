@@ -34,11 +34,9 @@ WIN_COMBINATIONS.each do |combo|
   pos_3 = board[win_index_3]
   
   if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
-    winner_X_count += 1
     return combo
     
   elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
-    winner_O_count += 1
     return combo
   
   else
