@@ -30,7 +30,7 @@ WIN_COMBINATIONS.each do |combo|
     return combo
   
  else
-  return false
+   false
  end
 end
 end
@@ -65,12 +65,12 @@ def winner?(board)
   winning_combo = won?(board)
   if winning_combo == 1
     if board[winning_combo[0]] == "X"
-      return "X"
+       "X"
     else 
-      return "O"
+       "O"
     end 
   else 
-    return nil 
+     nil 
   end 
     
 end 
