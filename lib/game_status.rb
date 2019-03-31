@@ -29,13 +29,11 @@ WIN_COMBINATIONS.each do |combo|
   if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
     combo
   
-
-
-elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
-   combo
+ elsif pos_1 == "O" && pos_2 == "O" && pos_3 == "O"
+    combo
   
 else
-  FALSE
+  false
 end
 end
     
