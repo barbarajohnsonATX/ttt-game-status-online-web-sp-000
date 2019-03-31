@@ -68,11 +68,12 @@ def over?(board)
 end
 
 def winner?(board)
-  winning = if won?(board)
-  if winning[0] == "X"
-    return "X"
-  else 
-    return "O"
+  if won?(board) 
+    if winning[0] == "X"
+      return "X"
+    else 
+      return "O"
+    end
   end
   
 end 
