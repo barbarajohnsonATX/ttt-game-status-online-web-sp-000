@@ -63,6 +63,14 @@ end
 
 def winner?(board)
   winning_combo = won?(board)
-if won?(board) 
-  board[]
+  if winning_combo == 1
+    if board[winning_combo[0]] == "X"
+      return "X"
+    else 
+      return "O"
+    end 
+  else 
+    return nil 
+  end 
+    
 end 
