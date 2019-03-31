@@ -47,6 +47,3 @@ def full?(board)
     value == ""
   end
 end
-    
-    
-end
