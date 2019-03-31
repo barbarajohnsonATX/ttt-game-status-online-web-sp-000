@@ -38,7 +38,7 @@ WIN_COMBINATIONS.each do |combo|
  end #end do
  
  
- board.all? do |value|
+ board.none? do |value|
    value == " "
  end 
  
