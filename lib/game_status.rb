@@ -47,3 +47,7 @@ def full?(board)
     value == ""
   end
 end
+
+def draw?(board)
+  
+end
