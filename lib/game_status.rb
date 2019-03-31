@@ -19,9 +19,9 @@ def won?(board)
 
 WIN_COMBINATIONS.any? do |combo| 
 if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
-  combo
+  board
 elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
-  combo
+  board
 else
   FALSE
 end
