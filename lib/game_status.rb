@@ -46,8 +46,8 @@ end
 
 
 def full?(board)
-  board.any? do |value|
-    value == " "
+  board.all? do |value|
+    value == "X" || value == "O"
   end
   
   
