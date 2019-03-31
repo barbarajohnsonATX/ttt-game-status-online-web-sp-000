@@ -31,13 +31,11 @@ def won?(board)
   
     if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
       return combo
-    
     elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
-    return combo
-  
-  else
-    false 
-  end #end if
+      return combo
+    else
+      false 
+    end #end if
   end #end do
  
 #return false if empty board 
