@@ -38,10 +38,10 @@ WIN_COMBINATIONS.each do |combo|
    false
  end
  end 
- 
+ else 
+   false
 end
-else
-  false
+ 
 end
 
 
