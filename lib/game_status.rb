@@ -17,14 +17,14 @@ WIN_COMBINATIONS = [
   
 def won?(board)
 
-WIN_COMBINATIONS.each do |combo| 
+WIN_COMBINATIONS.any? do |combo| 
 if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
   combo
-  elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
+elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
   combo
 else
   FALSE
 end
- end
+end
     
 end
