@@ -16,14 +16,6 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  empty = board.all? do |value|
-    value == " "
-  end 
-  
-  if empty
-    false 
-  else 
-    {
     
 WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
@@ -37,13 +29,10 @@ WIN_COMBINATIONS.each do |combo|
   if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
     return combo
   
- else
+  else
    false
  end
  end 
-    }
-  
-end
  
 end
 
