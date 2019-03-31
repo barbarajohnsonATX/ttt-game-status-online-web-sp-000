@@ -80,15 +80,10 @@ def over?(board)
 end
 
 def winner?(board)
-  winning_combo = won?(board).kind_of(Array)
-  if winning_combo == 1
-    if board[winning_combo[0]] == "X"
-       "X"
-    else 
-       "O"
-    end 
+  combo = won?(board).kind_of?(Array)
+  if combo == true 
+    return board[combo[0]]
   else 
-     nil 
-  end 
+    nil
     
 end 
