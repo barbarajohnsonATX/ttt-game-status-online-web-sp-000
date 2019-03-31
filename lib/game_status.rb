@@ -82,7 +82,7 @@ end
 def winner?(board)
   result = won?(board)
   if result.kind_of?(Array)
-    return board[result[0]]
+    return result[0]
   else 
     nil
     
