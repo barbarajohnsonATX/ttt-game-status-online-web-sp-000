@@ -80,7 +80,8 @@ def over?(board)
 end
 
 def winner?(board)
-  combo = won?(board).kind_of?(Array)
+  result = won?(board)
+  result.kind_of?(Array)
   if combo == true 
     return board[combo[0]]
   else 
