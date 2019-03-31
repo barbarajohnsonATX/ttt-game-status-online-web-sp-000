@@ -22,14 +22,18 @@ WIN_COMBINATIONS.each do |combo|
   win_index_2 = combo[1]
   win_index_3 = combo[2]
 
+  winner_X_count = 0 
+  winner_O_count = 0 
   pos_1 = board[win_index_1]
   pos_2 = board[win_index_2]
   pos_3 = board[win_index_3]
   
   if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") 
+    winner_X_count += 1
     return combo
     
   elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+    winner_O_count += 1
     return combo
   
   else
@@ -37,9 +41,13 @@ WIN_COMBINATIONS.each do |combo|
   end #end if
  end #end do
  
- 
+ #return false if empty board 
  board.none? do |value|
    value == " "
+ end 
+ 
+ if winner_X_count == winner_O_count 
+   false 
  end 
  
  
