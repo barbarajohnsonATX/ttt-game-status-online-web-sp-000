@@ -17,8 +17,10 @@ WIN_COMBINATIONS = [
   
 def won?(board)
 
-if board.all?("", " ")
-  false
+if board.all? do |value|
+  if value != "" or value != " "
+    false
+  end
 end
   
 WIN_COMBINATIONS.each do |combo| 
