@@ -18,5 +18,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   winning_combos = WIN_COMBINATIONS
     
-  if board == winning_combos.any?
+  
 end
