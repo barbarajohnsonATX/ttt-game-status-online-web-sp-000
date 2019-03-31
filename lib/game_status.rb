@@ -32,9 +32,9 @@ WIN_COMBINATIONS.each do |combo|
  elsif pos_1 == "O" && pos_2 == "O" && pos_3 == "O"
     combo
   
-else
+ else
   false
-end
+ end
 end
     
 end
