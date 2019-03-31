@@ -20,7 +20,10 @@ def won?(board)
     value == " "
   end 
   
-  if !empty do 
+  if empty
+    false 
+  else 
+    {
     
 WIN_COMBINATIONS.each do |combo| 
   win_index_1 = combo[0]
@@ -38,8 +41,8 @@ WIN_COMBINATIONS.each do |combo|
    false
  end
  end 
- else 
-   false
+    }
+  
 end
  
 end
