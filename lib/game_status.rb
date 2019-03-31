@@ -17,6 +17,6 @@ WIN_COMBINATIONS = [
   
 def won?(board)
 
-for eac
+WIN_COMBINATIONS.each 
     
 end
